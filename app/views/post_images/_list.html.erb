@@ -1,6 +1,6 @@
-<div class="card-list-containar py-5">
+<div class="card-list-container py-5">
   <% post_images.each do |post_image| %>
-  <div class="card w-50 mx-auto mt-4 shasow-lg">
+  <div class="card w-50 mx-auto mt-4 shadow-lg">
     <%= link_to post_image_path(post_image.id) do %>
       <%= attachment_image_tag post_image, :image %>
     <% end %>
